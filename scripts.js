@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.localStorage.setItem('formData', JSON.stringify(userData));
 
       // Use Axios to send a POST request to the backend API
-      axios.post('http://localhost:8000/contact-form', userData)
+      axios.post('/contact-form', userData)
           .then(response => {
               console.log('Success:', response.data);
               window.location.href = 'form.html'; // Redirect to form.html on success
