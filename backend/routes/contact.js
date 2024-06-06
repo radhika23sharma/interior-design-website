@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 });
 
 // Route to add a new contact
-router.post('/contact-form', async (req, res) => {
+router.post('/contact', async (req, res) => {
   try {
     const { name, phone, email, query } = req.body;
     const newContact = new Contact({
